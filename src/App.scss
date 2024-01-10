@@ -1,0 +1,54 @@
+$sidebar-bg: #ecf0f1;
+$grid-container-bg: #1b2631;
+$grid-items-bg: #34495e;
+$grid-items-border: #bdc3c7;
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  background-color: $sidebar-bg;
+  top: 0;
+  left: 0;
+}
+
+.Icon {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 2px;
+}
+
+.input-section {
+  text-align: center;
+}
+
+.input-field {
+  display: block;
+  padding: 2px;
+  input {
+    width: 75%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  background-color: $grid-container-bg;
+}
+.grid-item {
+  background-color: $grid-items-bg;
+  display: grid;
+  place-items: center;
+  border-style: solid;
+  gap: -20rem;
+  border-color: $grid-items-border;
+  &__text {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #ecf0f1;
+  }
+}
